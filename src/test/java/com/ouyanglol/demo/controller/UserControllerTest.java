@@ -1,7 +1,6 @@
 package com.ouyanglol.demo.controller;
 
 import com.ouyanglol.demo.DemoApplicationTests;
-import com.ouyanglol.demo.model.User;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
