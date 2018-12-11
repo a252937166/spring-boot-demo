@@ -14,4 +14,5 @@ public interface UserDAO extends MyBatisBaseDao<User, String> {
      * @return 用户列表
      */
     List<User> selectAll();
+
 }

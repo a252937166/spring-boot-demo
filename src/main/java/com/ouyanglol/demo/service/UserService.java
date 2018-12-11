@@ -14,4 +14,19 @@ public interface UserService {
      */
     PageInfo<User> all();
 
+
+    /**
+     * 根据主键查找用户
+     * @param id id
+     * @return 用户
+     */
+    User selectById(String id);
+
+    /**
+     * 根据主键查找用户
+     * @param id id
+     * @return 用户
+     */
+    User selectByIdV2(String id);
+
 }
