@@ -18,4 +18,14 @@ public class UserControllerTest  extends DemoApplicationTests {
     public void list() {
         assertNotNull(userController.list());
     }
+
+    @Test
+    public void get() {
+        assertNotNull(userController.get("12"));
+    }
+
+    @Test
+    public void getV2() {
+        assertNotNull(userController.getV2("12"));
+    }
 }
