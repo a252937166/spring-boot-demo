@@ -8,4 +8,4 @@
 3. [spring boot:spring boot2.0集成mybatis
 ](https://github.com/a252937166/spring-boot-demo/wiki/spring-boot:spring-boot2.0%E9%9B%86%E6%88%90mybatis)
 
-4. [spring boot:spring-boot2.0集成redis]
+4. [spring boot:spring boot2.0集成redis](https://github.com/a252937166/spring-boot-demo/wiki/spring-boot:spring-boot2.0%E9%9B%86%E6%88%90redis)
