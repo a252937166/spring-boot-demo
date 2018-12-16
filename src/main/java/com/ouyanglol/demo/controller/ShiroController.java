@@ -42,7 +42,7 @@ public class ShiroController {
     @PostMapping("/login")
     public Object login(@RequestBody String body){
         String oper = "用户登录";
-        log.info("{}, body: {}",oper,body);
+        log.info("{}, body:{}",oper,body);
         JSONObject json = JSON.parseObject(body);
         String uname = json.getString("uname");
         String pwd = json.getString("pwd");
