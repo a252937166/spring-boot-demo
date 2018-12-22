@@ -4,7 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.ouyanglol.demo.entity.Result;
 import com.ouyanglol.demo.entity.ResultStatus;
-import com.ouyanglol.demo.entity.ShiroUser;
+import com.ouyanglol.demo.config.shiro.ShiroUser;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
