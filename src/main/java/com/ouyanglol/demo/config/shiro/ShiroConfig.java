@@ -1,6 +1,5 @@
-package com.ouyanglol.demo.config;
+package com.ouyanglol.demo.config.shiro;
 
-import com.ouyanglol.demo.entity.MyRealm;
 import org.apache.shiro.realm.Realm;
 import org.apache.shiro.spring.web.config.DefaultShiroFilterChainDefinition;
 import org.apache.shiro.spring.web.config.ShiroFilterChainDefinition;

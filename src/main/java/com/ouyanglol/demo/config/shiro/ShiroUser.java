@@ -1,4 +1,4 @@
-package com.ouyanglol.demo.entity;
+package com.ouyanglol.demo.config.shiro;
 
 import lombok.Data;
 
