@@ -16,9 +16,11 @@ import org.apache.shiro.authz.UnauthenticatedException;
 import org.apache.shiro.authz.UnauthorizedException;
 import org.apache.shiro.subject.Subject;
 import org.springframework.util.StringUtils;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -39,14 +41,9 @@ public class ShiroController {
         throw new UnauthorizedException();
     }
 
-    @PostMapping("/login")
-    public Object login(@RequestBody String body){
+    @GetMapping("/login")
+    public Object login(@RequestParam String uname,@RequestParam String pwd){
         String oper = "用户登录";
-        log.info("{}, body:{}",oper,body);
-        JSONObject json = JSON.parseObject(body);
-        String uname = json.getString("uname");
-        String pwd = json.getString("pwd");
-
         if (StringUtils.isEmpty(uname)){
             return Result.error(ResultStatus.FORBIDDEN);
         }
@@ -57,7 +54,9 @@ public class ShiroController {
         Subject currentUser = SecurityUtils.getSubject();
         try {
             //登录
-            currentUser.login( new UsernamePasswordToken(uname, pwd) );
+            UsernamePasswordToken usernamePasswordToken = new UsernamePasswordToken(uname, pwd);
+            usernamePasswordToken.setRememberMe(true);
+            currentUser.login( usernamePasswordToken );
             //从session取出用户信息
             ShiroUser user = (ShiroUser) currentUser.getPrincipal();
             if (user==null) {
