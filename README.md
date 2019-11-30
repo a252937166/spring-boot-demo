@@ -11,3 +11,5 @@
 4. [spring boot:spring boot2.0集成redis](https://github.com/a252937166/spring-boot-demo/wiki/spring-boot:spring-boot2.0%E9%9B%86%E6%88%90redis)
 
 5. [spring boot:spring boot2.0整合shiro](https://github.com/a252937166/spring-boot-demo/wiki/spring-boot:spring-boot2.0%E6%95%B4%E5%90%88shiro)
+
+6.[spring boot:spring boot2.0整合mongodb](https://github.com/a252937166/spring-boot-demo/wiki/spring-boot:spring-boot2.0%E6%95%B4%E5%90%88mongodb)
