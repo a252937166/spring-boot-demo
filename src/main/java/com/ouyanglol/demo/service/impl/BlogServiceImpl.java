@@ -1,0 +1,7 @@
+package com.ouyanglol.demo.service.impl;
+
+/**
+ * @date 2019/11/30 下午6:03
+ */
+public class BlogServiceImpl {
+}
