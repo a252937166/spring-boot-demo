@@ -13,3 +13,5 @@
 5. [spring boot:spring boot2.0整合shiro](https://github.com/a252937166/spring-boot-demo/wiki/spring-boot:spring-boot2.0%E6%95%B4%E5%90%88shiro)
 
 6. [spring boot:spring boot2.0整合mongodb](https://github.com/a252937166/spring-boot-demo/wiki/spring-boot:spring-boot2.0%E6%95%B4%E5%90%88mongodb)
+
+7. [spring boot:spring boot2.0整合elasticsearch](https://github.com/a252937166/lesson/wiki/Java%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF(%E4%B9%9D)%E2%80%94%E2%80%94Java%E9%9B%86%E6%88%90elasticsearch)

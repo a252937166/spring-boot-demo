@@ -23,6 +23,7 @@ public class MyRealm extends AuthorizingRealm {
             throw new AuthorizationException("PrincipalCollection method argument cannot be null.");
         }
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
+        info.addRole("333");
         return info;
     }
 
